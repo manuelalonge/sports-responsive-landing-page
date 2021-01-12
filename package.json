@@ -1,0 +1,37 @@
+{
+    "name": "sports-responsive-landing-page",
+    "version": "1.0.0",
+    "description": "Responsive Landing Page for Sports App",
+    "main": "index.js",
+    "dependencies": {
+        "webpack-cli": "^4.3.1",
+        "webpack": "^5.13.0"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^4.5.1",
+        "webpack-dev-server": "^3.11.1"
+    },
+    "scripts": {
+        "test": "test",
+        "dev": "webpack --mode development",
+        "start": "webpack serve --open Chrome.exe"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manuelalonge/sports-responsive-landing-page.git"
+    },
+    "keywords": [
+        "Sports",
+        "Responsive",
+        "Landing",
+        "Page",
+        "Mobile",
+        "First"
+    ],
+    "author": "Manuel Alonge",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/manuelalonge/sports-responsive-landing-page/issues"
+    },
+    "homepage": "https://github.com/manuelalonge/sports-responsive-landing-page#readme"
+}

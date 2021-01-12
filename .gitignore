@@ -104,6 +104,3 @@ dist
 .tern-port
 
 # Other files
-package-lock.json
-package.json
-webpack.config.js
