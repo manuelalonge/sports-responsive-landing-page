@@ -1,0 +1,11 @@
+<svg width="1405" height="716" viewBox="0 0 1405 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle r="399.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle opacity="0.65" r="499.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle opacity="0.55" r="599.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle opacity="0.45" r="699.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle opacity="0.35" r="799.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle opacity="0.25" r="899.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle opacity="0.15" r="999.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE"/>
+<circle r="200.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE" stroke-dasharray="8 8"/>
+<circle r="300.5" transform="matrix(-1 0 0 1 1000 354)" stroke="#00ADEE" stroke-dasharray="8 8"/>
+</svg>
