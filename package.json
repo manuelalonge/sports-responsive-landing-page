@@ -12,9 +12,9 @@
         "webpack-dev-server": "^3.11.1"
     },
     "scripts": {
-        "test": "test",
         "dev": "webpack --mode development",
-        "start": "webpack serve --open Chrome.exe"
+        "start": "webpack serve --open Chrome.exe",
+        "build": "webpack --mode production"
     },
     "repository": {
         "type": "git",
