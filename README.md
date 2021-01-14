@@ -34,6 +34,8 @@ To develop front-end programming skills through the creation of a responsive lan
 
 ## Deployed on Netlify at the following link
 
+[Link](https://sports-responsive-landing-page.netlify.app/)
+
 
 
 
