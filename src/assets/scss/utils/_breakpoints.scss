@@ -1,0 +1,23 @@
+$breakpoints: ( mobile: 400px, tablet:768px, small-dp:992px, desktop:1200px);
+@mixin breakpoint($screen) {
+    @if ($screen==mobile) {
+        @media all and (min-width: map-get($breakpoints, $screen)) {
+            @content;
+        }
+    }
+    @else if($screen==tablet) {
+        @media all and (min-width: map-get($breakpoints, $screen)) {
+            @content;
+        }
+    }
+    @else if ($screen==small-dp) {
+        @media all and (min-width: map-get($breakpoints, $screen)) {
+            @content;
+        }
+    }
+    @else {
+        @media all and (min-width: map-get($breakpoints, $screen)) {
+            @content;
+        }
+    }
+}
