@@ -43,6 +43,8 @@ In order to improve and avoid repeating the same mistakes of the [level 1](https
 
 To develop front-end programming skills through the creation of a responsive landing page
 
+## Main skills developed and lessons learnt
+
 ## Deployed on Netlify at the following link
 
 [Link](https://sports-responsive-landing-page.netlify.app/)
