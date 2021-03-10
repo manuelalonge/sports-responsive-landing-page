@@ -32,13 +32,13 @@ module.exports = {
             }
         ],
         },
-        {
+        /* {
           test: /\.html$/i,
           loader: 'html-loader',
           options: {
             minimize: true,
           }
-        },
+        }, */
         { 
             // fonts loader
             test: /\.(woff|woff2|eot|ttf)$/,
