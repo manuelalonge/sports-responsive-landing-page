@@ -1,12 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { index: path.resolve(__dirname, 'src', 'index.js') },
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   devServer: {
     port: 8080
@@ -32,33 +34,15 @@ module.exports = {
             }
         ],
         },
-        /* {
-          test: /\.html$/i,
-          loader: 'html-loader',
-          options: {
-            minimize: true,
-          }
-        }, */
         { 
             // fonts loader
             test: /\.(woff|woff2|eot|ttf)$/,
             type: 'asset/resource'
-        },
-      
+        },   
         // video
       // images asset/resouce: take all the images and put them to destination folder images
       { test: /\.(png|svg|jpg|gif|webp|mp4|webp)$/,
-        use: [
-        {
-          loader: 'file-loader',
-          options: {
-            esModule: false,
-            name: '[name].[ext]',
-            outputPath: 'images/',
-            publicPath: 'images/',
-          } 
-        }
-        ]
+        type: 'asset/resource'         
       },
     ]
   },
@@ -66,6 +50,11 @@ module.exports = {
     new HtmlWebpackPlugin({
         template: './src/index.html',
         filename: 'index.html'
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: './src/assets/images', to: 'assets/images' },
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
