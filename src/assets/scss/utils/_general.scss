@@ -1,17 +1,26 @@
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
 body,
 p,
 a,
 a:active,
 a:visited {
     font-family: 'Lato', sans-serif;
-    ;
     font-weight: 400;
     text-decoration: none;
     color: inherit;
+}
+
+@mixin section__title {
+    margin-bottom: 30px;
+}
+
+@mixin section__body-title {
+    margin-bottom: 30px;
+}
+
+@mixin section__body {
+    margin-bottom: 30px;
+}
+
+@mixin section__body {
+    line-height: 25px;
 }
