@@ -1,0 +1,76 @@
+@mixin container {
+    max-width: 1440px;
+    padding: 0;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-row {
+    flex-direction: row;
+}
+
+@mixin flex-col {
+    flex-direction: column;
+}
+
+@mixin flex-center-x {
+    justify-content: center;
+}
+
+@mixin flex-start-x {
+    justify-content: flex-start;
+}
+
+@mixin flex-end-x {
+    justify-content: flex-end;
+}
+
+@mixin flex-sb {
+    justify-content: space-between;
+}
+
+@mixin flex-sa {
+    justify-content: space-around;
+}
+
+@mixin flex-center-y {
+    align-items: center;
+}
+
+@mixin flex-start-y {
+    align-items: flex-start;
+}
+
+@mixin flex-end-y {
+    align-items: flex-end;
+}
+
+@mixin no-wrap {
+    flex-wrap: nowrap;
+}
+
+@mixin flex30 {
+    width: 30%;
+}
+
+@mixin flex39 {
+    width: 39%;
+}
+
+@mixin flex40 {
+    width: 40%;
+}
+
+@mixin flex60 {
+    width: 60%;
+}
+
+@mixin flex61 {
+    width: 61%;
+}
+
+@mixin flex70 {
+    width: 70%;
+}
