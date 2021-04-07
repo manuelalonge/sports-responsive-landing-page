@@ -5,3 +5,15 @@
 @mixin uppercase {
     text-transform: uppercase;
 }
+
+@mixin align-left {
+    text-align: left;
+}
+
+@mixin align-center {
+    text-align: center;
+}
+
+@mixin align-justify {
+    text-align: justify;
+}
