@@ -1,0 +1,7 @@
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
