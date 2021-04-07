@@ -6,6 +6,26 @@
     text-transform: uppercase;
 }
 
+@mixin size14 {
+    font-size: 14px;
+}
+
+@mixin size16 {
+    font-size: 16px;
+}
+
+@mixin size18 {
+    font-size: 18px;
+}
+
+@mixin size28 {
+    font-size: 28px;
+}
+
+@mixin size36 {
+    font-size: 36px;
+}
+
 @mixin align-left {
     text-align: left;
 }
