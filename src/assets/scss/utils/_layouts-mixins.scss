@@ -69,3 +69,19 @@
 @mixin flex70 {
     width: 70%;
 }
+
+@mixin noRepeat {
+    background-repeat: no-repeat;
+}
+
+@mixin width100Percent {
+    width: 100%;
+}
+
+@mixin padding0165 {
+    padding: 0 165px;
+}
+
+@mixin height100VH {
+    height: 100vh;
+}

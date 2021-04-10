@@ -4,7 +4,14 @@
     @include flex;
     @include flex-col;
     @include flex-center-x;
-    @include breakpoint("desktop") {}
+    @include breakpoint("desktop") {
+        @include width100Percent;
+        @include height100VH;
+        @include padding0165;
+        background-image: url('assets/images/jpg-png/landing-bg.png');
+        background-position: top right;
+        @include noRepeat;
+    }
     &__logo {
         @include containerMixin;
         @include flex;
