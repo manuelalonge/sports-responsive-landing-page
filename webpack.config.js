@@ -41,9 +41,9 @@ module.exports = {
         },   
         // video
       // images asset/resouce: take all the images and put them to destination folder images
-      { test: /\.(png|svg|jpg|gif|webp|mp4|webp)$/,
+      /* { test: /\.(png|svg|jpg|gif|webp|mp4|webp)$/,
         type: 'asset/resource'         
-      },
+      }, */
     ]
   },
   plugins: [
