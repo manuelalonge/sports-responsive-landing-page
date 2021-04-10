@@ -1,0 +1,40 @@
+// Section 1 - Landing Section
+.landing-section {
+    @include flex-center-x;
+    background-color: $bgLanding;
+    @include flex;
+    @include flex-col;
+}
+
+.landing-section__logo {
+    @include containerMixin;
+    @include flex;
+    @include flex-start-y;
+}
+
+.landing-section__logo__img {
+    margin-top: 60px;
+    margin-left: 131px;
+}
+
+.landing-section__container {
+    @include containerMixin;
+    @include flex;
+    @include flex-col;
+    @include flex-center-x;
+}
+
+.landing-section__body {
+    @include sectionBodyMX;
+    color: $txtBody;
+    @include size18;
+    @include align-center;
+}
+
+.landing-section__stores {
+    @include flex;
+}
+
+.landing-section__stores__google {
+    @include marginLeft35;
+}

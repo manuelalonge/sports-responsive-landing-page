@@ -1,7 +1,9 @@
 // Utils
 @import './assets/scss/utils/breakpoints';
 @import './assets/scss/utils/fontface';
-@import './assets/scss/utils/colorvariables';
-@import './assets/scss/utils/textmixins';
-@import './assets/scss/utils/layoutsmixins';
+@import './assets/scss/utils/color-variables';
+@import './assets/scss/utils/text-mixins';
+@import './assets/scss/utils/layouts-mixins';
 @import './assets/scss/utils/general';
+//Pages
+@import './assets/scss/sections/landing-section';

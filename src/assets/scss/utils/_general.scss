@@ -9,18 +9,38 @@ a:visited {
     color: inherit;
 }
 
-@mixin section__title {
+@mixin sectionTitleMX {
     margin-bottom: 30px;
 }
 
-@mixin section__body-title {
+@mixin sectionBodyTitleMX {
     margin-bottom: 30px;
 }
 
-@mixin section__body {
+@mixin sectionBodyMX {
     margin-bottom: 30px;
-}
-
-@mixin section__body {
     line-height: 25px;
+}
+
+@mixin marginLeft35 {
+    margin-left: 35px;
+}
+
+@mixin containerMixin {
+    max-width: 1440px;
+    padding: 0;
+}
+
+.container {
+    @include containerMixin;
+}
+
+.section__body-title {
+    @include sectionBodyTitleMX;
+    color: $txtGrey;
+    @include size36;
+    @include bold;
+    @include align-center;
+    line-height: 40px;
+    letter-spacing: 0.03em;
 }
