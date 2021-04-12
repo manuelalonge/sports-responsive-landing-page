@@ -4,7 +4,7 @@
     @include flex;
     @include flex-col;
     @include flex-center-x;
-    @include breakpoint("desktop") {
+    @include breakpoint('desktop') {
         @include width100Percent;
         @include height100VH;
         @include padding0165;
