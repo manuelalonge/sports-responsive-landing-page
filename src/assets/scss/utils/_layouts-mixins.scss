@@ -85,3 +85,8 @@
 @mixin height100VH {
     height: 100vh;
 }
+
+@mixin widthHeightMatch {
+    width: 300px;
+    height: 200px;
+}

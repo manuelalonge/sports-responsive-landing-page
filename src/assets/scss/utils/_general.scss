@@ -35,13 +35,32 @@ a:visited {
     @include containerMixin;
 }
 
+.section__title {
+    @include sectionBodyTitleMX;
+    @include align-center;
+    @include uppercase;
+    @include size16;
+    color: $txtAzure;
+}
 
-/* .section__body-title {
+.section__body-title {
     @include sectionBodyTitleMX;
     color: $txtGrey;
-    @include size36;
+    @include size28;
     @include bold;
     @include align-center;
     line-height: 40px;
     letter-spacing: 0.03em;
-} */
+}
+
+.section__body {
+    @include sectionBodyMX;
+    @include align-center;
+    @include size16;
+}
+
+.learn__more {
+    @include align-center;
+    @include size16;
+    color: $txtAzure;
+}
