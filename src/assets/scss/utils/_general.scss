@@ -35,7 +35,8 @@ a:visited {
     @include containerMixin;
 }
 
-.section__body-title {
+
+/* .section__body-title {
     @include sectionBodyTitleMX;
     color: $txtGrey;
     @include size36;
@@ -43,4 +44,4 @@ a:visited {
     @include align-center;
     line-height: 40px;
     letter-spacing: 0.03em;
-}
+} */

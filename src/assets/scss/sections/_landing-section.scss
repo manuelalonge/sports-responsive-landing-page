@@ -20,6 +20,10 @@
     &__logo__img {
         margin-top: 32px;
         margin-left: 131px;
+        @include breakpoint ('desktop') {
+            margin-left: 1px;
+            margin-top: -110px;
+        }
     }
     &__container {
         @include containerMixin;
@@ -27,11 +31,30 @@
         @include flex-col;
         @include flex-center-x;
     }
+    &__body-title {
+        color: $txtGrey;
+        @include size30;
+        @include bold;
+        @include align-center;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        @include breakpoint ('desktop') {
+            @include align-left;
+            @include size36;
+            width: 546px;
+            height: 96px;
+        }
+    }
     &__body {
         @include sectionBodyMX;
         color: $txtBody;
         @include size18;
         @include align-center;
+        @include breakpoint('desktop') {
+            @include align-left;
+            width: 453px;
+            height: 52px;
+        }
     }
     &__stores {
         @include flex;
