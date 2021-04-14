@@ -5,8 +5,7 @@
     @include flex-col;
     @include flex-center-x;
     @include breakpoint('desktop') {
-        @include width100Percent;
-        @include height100VH;
+        @include widthHeight($width: 100%, $height: 100vh);
         @include padding0165;
         background-image: url('assets/images/jpg-png/landing-bg.png');
         background-position: top right;
@@ -41,8 +40,7 @@
         @include breakpoint ('desktop') {
             @include align-left;
             @include size36;
-            width: 546px;
-            height: 96px;
+            @include widthHeight($width: 546px, $height: 96px);
         }
     }
     &__body {
@@ -52,8 +50,7 @@
         @include align-center;
         @include breakpoint('desktop') {
             @include align-left;
-            width: 453px;
-            height: 52px;
+            @include widthHeight($width: 453px, $height: 52px);
         }
     }
     &__stores {

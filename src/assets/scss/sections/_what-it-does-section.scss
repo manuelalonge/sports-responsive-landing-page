@@ -7,25 +7,22 @@
         @include flex-center-x;
         @include flex;
         &__match {
-            width: 100%;
-            height: auto;
+            @include widthHeight($width: 100%, $height: auto);
             padding: 30px 20px 0 20px;
             background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('assets/images/jpg-png/ronaldo.jpg');
             background-position: center;
             background-size: cover;
             @include breakpoint('desktop') {
-                width: 60%;
-                height: 590px;
+                @include widthHeight($width: 60%, $height: 590px);
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
                 padding: 7% 0;
             }
         }
         &__match__panel {
             @include widthHeightMatch;
-            z-index: 1;
+            // z-index: 0;
             @include breakpoint('desktop') {
-                width: 360px;
-                height: 220px;
+                @include widthHeight($width: 360px, $height: 220px);
                 position: relative;
                 box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.5);
             }
@@ -37,50 +34,72 @@
         }
         &__match__video {
             @include widthHeightMatch;
-            position: relative;
-            top: -60px;
-            left: 20px;
+            @include position(relative,
+            $top: -40px, $left: 20px);
             box-shadow: 0;
-            z-index: 0;
+            // z-index: 1;
             @include breakpoint('desktop') {
-                width: 360px;
-                height: 220px;
-                position: relative;
-                top: -20px;
-                left: 100px;
+                @include widthHeight($width: 360px, $height: 220px);
+                @include position(relative,
+                $top: -20px, $left: 100px);
                 box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.5);
                 border: 0;
             }
         }
+        &__match__panel__info__logos {
+            @include position(relative,
+            $top: -170px, $left: 70px);
+        }
         &__match__panel__info__logos__arsenal {
-            @include breakpoint('desktop') {
-                z-index: 0;
-            }
+            z-index: 0;
         }
         &__match__panel__info__logos__chelsea {
-            @include breakpoint('desktop') {
-                z-index: 1;
-            }
+            z-index: 1;
+            margin-left: -20px;
         }
         &__match__panel__notifications {
-            margin-top: -59px;
+            margin-top: -57px;
             background-color: $Grey20;
             height: 20%;
             border-radius: 0 0 4px 4px;
             p {
-                position: relative;
-                left: -30px;
-                top: 8px;
+                @include position(relative,
+                $top: 8px, $left: -30px);
             }
             img {
-                position: relative;
-                left: 250px;
-                bottom: 28px;
+                @include position(relative,
+                $bottom: 28px, $left: 250px);
             }
         }
         &__match__panel__notifications__elem {
             @include flex;
             @include flex-center-x;
             @include flex-center-y;
+        }
+        &__match__panel__info__sub {
+            p {
+                @include align-left;
+                @include size14;
+            }
+        }
+        &__match__panel__info__sub__date {
+            @include position(relative,
+            $top: 19px, $left: 11px);
+            @include widthHeight($width: 82px, $height: 16px);
+            line-height: 15px;
+            color: $txtBody;
+            @include bold;
+        }
+        &__match__panel__info__sub__teams {
+            @include position(relative,
+            $top: -10px, $left: 11px);
+            @include widthHeight($width: 66px, $height: 35px);
+            color: $txtBlack;
+        }
+        &__match__panel__info__sub__type {
+            @include position(relative,
+            $top: -50px, $left: 11px);
+            @include widthHeight($width: 85px, $height: 18px);
+            color: $txtBlack;
         }
     }
