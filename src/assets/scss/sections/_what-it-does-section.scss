@@ -19,7 +19,9 @@
             }
         }
         &__match__panel {
-            z-index: 0;
+            z-index: 1;
+            @include position(relative,
+            $top: 20px, $left: -50px);
             @include widthHeight($width: 300px, $height: 200px);
             @include breakpoint('desktop') {
                 @include widthHeight($width: 360px, $height: 220px);
@@ -33,7 +35,7 @@
             border-radius: 4px 4px 0 0;
         }
         &__match__video {
-            z-index: 1;
+            // z-index: 1;
             @include widthHeight($width: 300px, $height: 200px);
             @include position(relative,
             $top: -40px, $left: 20px);
