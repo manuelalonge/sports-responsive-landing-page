@@ -6,6 +6,9 @@
         @include flex-center-y;
         @include flex-center-x;
         @include flex;
+        @include breakpoint('desktop') {
+            flex-direction: row;
+        }
         &__match {
             @include widthHeight($width: 100%, $height: auto);
             padding: 30px 20px 0 20px;
@@ -16,6 +19,7 @@
                 @include widthHeight($width: 60%, $height: 590px);
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
                 padding: 7% 0;
+                //@include flex;
             }
         }
         &__match__panel {
@@ -35,7 +39,6 @@
             border-radius: 4px 4px 0 0;
         }
         &__match__video {
-            // z-index: 1;
             @include widthHeight($width: 300px, $height: 200px);
             @include position(relative,
             $top: -40px, $left: 20px);
