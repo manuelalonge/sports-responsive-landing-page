@@ -1,8 +1,7 @@
 .get-started {
     @include flex;
-    background: violet;
     @include breakpoint('desktop') {
-        background-image: url('../../images/svg/get-started-bg.svg');
+        background-image: url('assets/images/svg/get-started-bg.svg');
         flex-direction: row;
     }
 }
