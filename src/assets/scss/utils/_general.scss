@@ -33,6 +33,9 @@ a:visited {
 
 .container {
     @include containerMixin;
+    @include breakpoint('desktop') {
+        @include position(relative, $top: -100px);
+    }
 }
 
 .section__title {
@@ -41,6 +44,9 @@ a:visited {
     @include uppercase;
     @include size16;
     color: $txtAzure;
+    @include breakpoint('desktop') {
+        @include align-left;
+    }
 }
 
 .section__body-title {
@@ -51,12 +57,18 @@ a:visited {
     @include align-center;
     line-height: 40px;
     letter-spacing: 0.03em;
+    @include breakpoint('desktop') {
+        @include align-left;
+    }
 }
 
 .section__body {
     @include sectionBodyMX;
     @include align-center;
     @include size16;
+    @include breakpoint('desktop') {
+        @include align-left;
+    }
 }
 
 .learn__more {
