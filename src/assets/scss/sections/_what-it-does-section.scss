@@ -17,9 +17,12 @@
             background-size: cover;
             @include breakpoint('desktop') {
                 @include widthHeight($width: 60%, $height: 590px);
-                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%), url('assets/images/jpg-png/ronaldo.jpg');
+                background-position: left;
+                background-repeat: no-repeat;
                 padding: 7% 0;
-                //@include flex;
+                @include position(relative,
+                $top: -70px, $left: 120px);
             }
         }
         &__match__panel {
@@ -57,10 +60,19 @@
             $top: -90px, $left: 20px);
             @include widthHeight($width: 300px, $height: 35px);
             z-index: 1;
+            @include breakpoint('desktop') {
+                @include position(relative,
+                $top: -22px, $left: -260px);
+                width: 360px;
+            }
         }
         &__match__panel__info__logos {
             @include position(relative,
             $top: -160px, $left: 70px);
+            @include breakpoint('desktop') {
+                margin-top: 35px;
+                margin-left: 10px;
+            }
         }
         &__match__panel__info__logos__arsenal {
             z-index: 0;
@@ -82,16 +94,27 @@
                 @include position(relative,
                 $bottom: 28px, $left: 250px);
             }
+            @include breakpoint('desktop') {
+                @include position(relative,
+                $top: 40px);
+            }
         }
         &__match__panel__notifications__elem {
             @include flex;
             @include flex-center-x;
             @include flex-center-y;
+            @include breakpoint ('desktop') {
+                margin-left: 20px;
+            }
         }
         &__match__panel__info__sub {
             p {
                 @include align-left;
                 @include size14;
+            }
+            @include breakpoint('desktop') {
+                @include position(relative,
+                $top: 28px, $left: 15px);
             }
         }
         &__match__panel__info__sub__date {
