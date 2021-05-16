@@ -1,0 +1,18 @@
+.get-started {
+    @include flex;
+    background: violet;
+    @include breakpoint('desktop') {
+        background-image: url('../../images/svg/get-started-bg.svg');
+        flex-direction: row;
+    }
+}
+
+
+/* 
+.get-started__icon {}
+
+.get-started__icon--notification {}
+
+.get-started__icon--dot {}
+
+.get-started__icon--screen {} */

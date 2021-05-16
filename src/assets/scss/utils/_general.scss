@@ -75,4 +75,5 @@ a:visited {
     @include align-center;
     @include size16;
     color: $txtAzure;
+    display: block;
 }
