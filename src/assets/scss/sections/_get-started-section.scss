@@ -1,9 +1,10 @@
-.get-started {
-    @include flex;
-    @include breakpoint('desktop') {
-        background-image: url('assets/images/svg/get-started-bg.svg');
-        flex-direction: row;
-    }
+.get-started {}
+
+.get-started .container:last-child {
+    background: url('assets/images/svg/get-started-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 
