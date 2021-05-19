@@ -28,5 +28,5 @@
 }
 
 .get-started__icon--screen {
-    @include backgroundMixin($bgImage: url('assets/images/svg/icons/get-started-icons/shop.svg'), $bg: #FFFFFF, $repeat: no-repeat, $position: center);
+    @include backgroundMixin($bgImage: url('assets/images/svg/icons/get-started-icons/screen.svg'), $bg: #FFFFFF, $repeat: no-repeat, $position: center);
 }
