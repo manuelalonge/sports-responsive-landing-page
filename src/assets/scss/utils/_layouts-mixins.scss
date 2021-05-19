@@ -82,3 +82,10 @@
     width: $width;
     height: $height;
 }
+
+@mixin backgroundMixin($bg, $bgImage, $repeat, $position) {
+    background-image: $bgImage;
+    background: $bg;
+    background-repeat: $repeat;
+    background-position: $position;
+}

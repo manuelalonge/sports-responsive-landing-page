@@ -1,18 +1,32 @@
-.get-started {}
-
+// .get-started {}
 .get-started .container:last-child {
-    background: url('assets/images/svg/get-started-bg.svg');
-    background-repeat: no-repeat;
-    background-position: right;
+    @include backgroundMixin($bgImage: url('assets/images/svg/get-started-bg.svg'), $bg: #FFFFFF, $repeat: no-repeat, $position: right);
     background-size: contain;
 }
 
+.get-started__icon {
+    @include widthHeight($width: auto, $height: 100vh);
+    @include position(absolute,
+    $top: 1310px, $left: 770px);
+    z-index: 2;
+}
 
-/* 
-.get-started__icon {}
+.get-started__icon--notification,
+.get-started__icon--screen {
+    @include widthHeight($width: 90px, $height: 90px);
+}
 
-.get-started__icon--notification {}
+.get-started__icon--notification {
+    @include position(relative,
+    $top: 90px, $left: 90px);
+    @include backgroundMixin($bgImage: url('assets/images/svg/icons/get-started-icons/notification.svg'), $bg: #FFFFFF, $repeat: no-repeat, $position: center);
+    border-radius: 90px;
+}
 
-.get-started__icon--dot {}
+.get-started__icon--dot {
+    @include backgroundMixin($bgImage: url('assets/images/svg/icons/get-started-icons/get-started-dot.svg'), $bg: #FFFFFF, $repeat: no-repeat, $position: center);
+}
 
-.get-started__icon--screen {} */
+.get-started__icon--screen {
+    @include backgroundMixin($bgImage: url('assets/images/svg/icons/get-started-icons/shop.svg'), $bg: #FFFFFF, $repeat: no-repeat, $position: center);
+}

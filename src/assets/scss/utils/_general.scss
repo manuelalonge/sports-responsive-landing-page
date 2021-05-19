@@ -76,4 +76,7 @@ a:visited {
     @include size16;
     color: $txtAzure;
     display: block;
+    @include breakpoint('desktop') {
+        @include align-left;
+    }
 }
